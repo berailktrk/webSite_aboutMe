@@ -1,10 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>berailktrk</title>
     <link rel="stylesheet" href="tasarım.css" />
+    <script type="text/javascript">
+      function buton_is_clicked(){
+        window.scrollTo({
+          top: document.body.scrollHeight,
+          behavior:"smooth"
+        });
+      }
+    </script>
   </head>
   <body>
     <header class="header">
@@ -16,7 +24,7 @@
         </div>
         <ul>
           <li><a href="#">Ana Sayfa</a></li>
-          <li><a href="#">Özgeçmiş</a></li>
+          <li><a href="#">Öz Geçmiş</a></li>
           <li><a href="#">Şehrim</a></li>
           <li><a href="#">İlgi Alanlarım</a></li>
           <li><a href="#">Mirasımız</a></li>
@@ -24,17 +32,19 @@
         </ul>
       </div>
 
-      <div class="butonlar">
-        <button>
-          <i></i>
-        </button>
-      </div>
+    
     </header>
 
     <section class="anaSayfa">
      <div class="icerik">
         <h3>Benim Hakkımda Bilgi Edinmek Mi İstiyorsun?</h3>
-        <a href="#">Aşağı Kaydır!</a>
+        <button class="asagiKaydir" draggable="true" onclick="buton_is_clicked()">🠗🠗🠗AŞAĞI KAYDIR🠗🠗🠗</button>
+      </div>
+    </section>
+
+    <section class="section-Hakkimda">
+      <div class="hakkimda">
+
       </div>
     </section>
   </body>

@@ -76,9 +76,30 @@ header{
     background-size: cover;
     background-position: center 75px;
 }
+.section-Hakkimda{
+    background: url(../images/home_Background2.png) no-repeat;
+    background-size: contain;
+    min-height: 100vh;
+}
 .anaSayfa .icerik{
-    max-width: 50rem;
+    max-width: 60rem;
 }
 .anaSayfa .icerik h3{
     font-size: 4rem;
+    margin-left: 500px;
+}
+.asagiKaydir{
+    margin-left: 600px;
+    margin-top: 30px;
+    background-color: aqua;
+    font-family: "Rubik", sans-serif;
+    color: #0ca84a;
+    font-size: 15px;
+    padding: 8px 15px;
+    border-radius: 15px;
+    
+    transition: all 1s ease-in-out;
+}
+.asagiKaydir:hover{
+    background-color: #000000;
 }

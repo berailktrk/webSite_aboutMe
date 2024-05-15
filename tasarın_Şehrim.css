@@ -27,7 +27,7 @@ html::-webkit-scrollbar-thumb{
 body{
     background-color: #b2b2b2;
     font-family: 'Poppins', sans-serif; /* arkaplan rengi, sitenin uzunluğu ve font */
-    height: 200vh;
+    height: 130vh;
 }
 
 section{
@@ -82,80 +82,12 @@ header{
     width: 100%;
     z-index: 1;
 }
-
-/* 0000000000000000 ANA SAYFA 0000000000000000 */
-
-.anaSayfa{
-    min-height: 100vh;
-    background: url(../images/home_Background.png) no-repeat;
+/* 0000000 Şehrim 0000000 */
+.istanbul{
+    background: url(../images/city_Background.png) no-repeat;
     background-size: cover;
     background-position: center 75px;
 }
-.section-Hakkimda{
-    background: url(../images/home_Background2.png) no-repeat;
-    background-size: 100% 100%;
-    min-height: 100vh;
-    background-position: center;
-    font-family: "Shadows Into Light", cursive;
-}
-
-.section-Hakkimda .hakkimda{
-    max-width: 30rem;
-    float: right;
-    margin-right: 17rem;
-    margin-top: 6rem;
-}
-.section-Hakkimda .hakkimda h3{
-    text-align: center;
-    max-width: 15rem;
-    font-size: 35px;
-    padding: 10px;
-}
-.section-Hakkimda .hakkimda p{
-    max-width: 15rem;
-    text-align: center;
-}
-.ozGecmis{
-    padding: 5px;
-    border-radius: 10px;
-    margin-top: 35px;
-    margin-left: 60px;
-    background-color: #000000;
-    color: #ffffff;
-    transition: all 1s ease-in-out;
-    cursor: pointer;
-    font-family: "Shadows Into Light", cursive;
-}
-.ozGecmis:hover{
-    color: #000000;
-    background-color: #ffffff;
-    letter-spacing: 0.3px;
-}
-
-.anaSayfa .icerik{
-    max-width: 60rem;
-}
-.anaSayfa .icerik h3{
-    font-size: 4rem;
-    margin-left: 500px;
-}
-.asagiKaydir{
-    margin-left: 600px;
-    margin-top: 30px;
-    background-color: aqua;
-    font-family: "Rubik", sans-serif;
-    color: #0ca84a;
-    font-size: 15px;
-    padding: 8px 15px;
-    border-radius: 15px;
-    
-    transition: all 1s ease-in-out;
-}
-.asagiKaydir:hover{
-    background-color: #000000;
-}
-
-/* 0000000 Şehrim 0000000 */
 .istanbul h1{
     text-align: center;
     font-family: 'Poppins', sans-serif;
@@ -169,6 +101,8 @@ header{
 }
 
 .slider {
+    border-radius: 3rem;
+    background-color: #161f5c00;
 	width: 80%;
 	margin-left: 12rem;
 }
@@ -176,7 +110,6 @@ header{
 .slide {
 	display: inline-block;
 	margin: 10px;
-    margin-top: -7rem;
 	border: 1px solid #000000;
 	border-radius: 10px;
 	box-shadow: 0 0 10px rgba(0,0,0,0.2);

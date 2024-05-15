@@ -1,7 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@390&display=swap');    /*Navbar için font stili*/
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap'); /*Anasayfa hakkımda kısmı için font stili*/
+
+
+/* kaydırma çubuğu ayarları */
+
 html{
     scroll-behavior: smooth;
 }
+html::-webkit-scrollbar{
+    width: 5px;                         
+    background-color: #000000;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: #0ca84a;
+}
+
+/* itemlerin konumlanma ayarı */
 *{
     padding: 0;
     margin: 0;
@@ -12,19 +26,20 @@ html{
 
 body{
     background-color: #b2b2b2;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif; /* arkaplan rengi, sitenin uzunluğu ve font */
     height: 200vh;
 }
 
 section{
     padding: 100px 0px;
-    background-color: rgb(200, 191, 199);
+    background-color: #b2b2b2; 
 }
 
 .section_title{
     margin-bottom: 30px;
 }
 
+/* 000000 Header Ayarları 000000 */
 
 .navbar ul{
     float: right;
@@ -78,9 +93,45 @@ header{
 }
 .section-Hakkimda{
     background: url(../images/home_Background2.png) no-repeat;
-    background-size: contain;
+    background-size: 100% 100%;
     min-height: 100vh;
+    background-position: center;
+    font-family: "Shadows Into Light", cursive;
 }
+
+.section-Hakkimda .hakkimda{
+    max-width: 30rem;
+    float: right;
+    margin-right: 17rem;
+    margin-top: 6rem;
+}
+.section-Hakkimda .hakkimda h3{
+    text-align: center;
+    max-width: 15rem;
+    font-size: 35px;
+    padding: 10px;
+}
+.section-Hakkimda .hakkimda p{
+    max-width: 15rem;
+    text-align: center;
+}
+.ozGecmis{
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 35px;
+    margin-left: 60px;
+    background-color: #000000;
+    color: #ffffff;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+    font-family: "Shadows Into Light", cursive;
+}
+.ozGecmis:hover{
+    color: #000000;
+    background-color: #ffffff;
+    letter-spacing: 0.3px;
+}
+
 .anaSayfa .icerik{
     max-width: 60rem;
 }
@@ -102,4 +153,26 @@ header{
 }
 .asagiKaydir:hover{
     background-color: #000000;
+}
+
+/* 0000000 Şehrim 0000000 */
+
+.slider {
+	width: 80%;
+	margin: 40px auto;
+}
+
+.slide {
+	display: inline-block;
+	margin: 10px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.slide img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 10px;
 }

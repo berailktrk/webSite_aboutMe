@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş Yap</title>
+    <link rel="stylesheet" href="tasarım.css">
+</head>
+<body>
+    <header class="header">
+        <div class="navbar">
+          <div class="logo">
+            <h2><a href="anaSayfa.html">Bera İLKTÜRK</a></h2>
+          </div>
+          <ul>
+            <li><a href="anaSayfa.html">Ana Sayfa</a></li>
+            <li><a href="özgeçmiş.html">Öz Geçmiş</a></li>
+            <li><a href="şehrim.html">Şehrim</a></li>
+            <li><a href="ilgiAlanlarım.html">İlgi Alanlarım</a></li>
+            <li><a href="mirasımız.html">Mirasımız</a></li>
+            <li><a href="girişYap.html">Giriş Yap</a></li>
+          </ul>
+        </div>    
+    </header>
+    
+    <form class="giris" action="login.php" method="post">
+        <label for="kullanici_adi">Kullanıcı Adı (Öğrenci Numaranız):</label>
+        <input type="text" id="kullanici_adi" name="kullanici_adi" required>
+        <br>
+        <label for="sifre">Şifre (Öğrenci Numaranız):</label>
+        <input type="password" id="sifre" name="sifre" required>
+        <br>
+        <br>
+        <button type="submit">Giriş Yap</button>
+    </form>
+</body>
+</html>

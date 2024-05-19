@@ -80,6 +80,7 @@ header{
     background: #10063ee5;
     border-bottom: 5px solid rgb(244, 211, 94);
     position: fixed;
+    position: relative;
     width: 100%;
     z-index: 1;
 }
@@ -126,6 +127,10 @@ header{
     transition: all 1s ease-in-out;
     cursor: pointer;
     font-family: "Shadows Into Light", cursive;
+}
+.ozGecmis a{
+    text-decoration: none;
+    color: #ffffff;
 }
 .ozGecmis:hover{
     color: #000000;
@@ -192,19 +197,51 @@ header{
 
 /* ÖZ GEÇMİŞ */
 
-.ozgecmis_Aciklama p{
-    padding: 1rem;
-}
-.giris{
-    padding: 20rem;
-}
+.ozGecmis-container {
+    max-width: 1200px;
+    margin: 5rem auto;
+    padding: 50px;
+    background-color: #f1f1f1;
+    border-radius: 15px;
+  }
+  
+.ozGecmis-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+.ozGecmis-container p {
+    text-align: justify;
+    margin-bottom: 20px;
+  }
 
+  .ozgecmis_Aciklama {
+    margin-top: 50px;
+  }
+  
+  .ozgecmis_Aciklama h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .ozgecmis_Aciklama p {
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+.ozgecmis_Aciklama{
+    max-width: 1200px;
+    margin: 5rem auto;
+    padding: 50px;
+    background-color: #f1f1f1;
+    border-radius: 15px;
+}
 /* ŞEHRİM */
 
 .istanbul{
     background: url(../images/city_Background.png) no-repeat;
     background-size: cover;
-    background-position: center 75px;
+    background-position: center -3px;
+    
 }
 .istanbul h1{
     text-align: center;
@@ -223,20 +260,251 @@ header{
     max-width: 500px;
     margin-left: 60vh;
     display: block;
-  }
+}
   
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
     width: 40px;
     height: 40px;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 50%;
-  }
+}
   
-  .carousel-control-prev-icon {
+.carousel-control-prev-icon {
     background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'><path d='M11.354 1.646a.5.5 0 0 1 0.708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1.708 0z'/></svg>");
+}
+  
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'><path d='M4.646 1.646a.5.5 0 0 1.708 0L8 5.293l3.646-3.647a.5.5 0 0 1.708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 0-.708z'/></svg>");
+}
+
+/* KAPALIÇARŞI */
+
+.kapaliCarsi-container {
+    max-width: 1200px;
+    margin: 5rem auto;
+    padding: 50px;
+    background-color: #f1f1f1;
   }
   
-  .carousel-control-next-icon {
-    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'><path d='M4.646 1.646a.5.5 0 0 1.708 0L8 5.293l3.646-3.647a.5.5 0 0 1.708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 0-.708z'/></svg>");
+.kapaliCarsi-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+.kapaliCarsi-container p {
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+.kapaliCarsi-images {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.kapaliCarsi-images img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    margin: 0 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* BOĞAZ */
+
+.bosphorus-container {
+    max-width: 1200px;
+    margin: 5rem auto;
+    padding: 50px;
+    background-color: #f1f1f1;
+  }
+  
+.bosphorus-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+.bosphorus-container p {
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+.bosphorus-images {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.bosphorus-images img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    margin: 0 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* AYASOFYA */
+
+.ayasofya-container {
+    max-width: 1200px;
+    margin: 5rem auto;
+    padding: 50px;
+    background-color: #f1f1f1;
+  }
+  
+.ayasofya-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+.ayasofya-container p {
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+
+
+.ayasofya-images {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.ayasofya-images img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    margin: 0 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* İLETİŞİM */
+
+#submitBtn {
+    background-color: #28a745;
+    color: #fff;
+}
+
+#resetBtn {
+    background-color: #dc3545;
+    color: #fff;
+    float: right;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.iletisim h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contactBtn {
+    width: 48%;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}   
+.bridge{
+    width: 48%;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* MİRASIMIZ */
+
+.mirasimiz-container {
+    max-width: 1200px;
+    margin: 5rem auto;
+    padding: 50px;
+    background-color: #f1f1f1;
+  }
+  
+.mirasimiz-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+.mirasimiz-container p {
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+.yerebatan-images {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+.yerebatan-images img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    margin: 0 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+
+  /* İLGİ ALANLARIM */
+  
+  .ilgiAlanlarım-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #f1f1f1;
+  }
+  
+  .ilgiAlanlarım-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .ilgiAlanlarım-container p {
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+  
+  .ilgiAlanlarım-container h2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .ilgiAlanlarım-container ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .ilgiAlanlarım-container li {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
   }

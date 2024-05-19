@@ -27,16 +27,31 @@
         </div>    
     </header>
     
-    <form class="giris" action="login.php" method="post">
-        <label for="kullanici_adi">Kullanıcı Adı (Öğrenci Numaranız):</label>
-        <input type="text" id="kullanici_adi" name="kullanici_adi" required>
-        <br>
-        <label for="sifre">Şifre (Öğrenci Numaranız):</label>
-        <input type="password" id="sifre" name="sifre" required>
-        <br>
-        <br>
-        <button type="submit">Giriş Yap</button>
-    </form>
+    <div class="container mt-5">
+      <form class="giris" action="login.php" method="post" onsubmit="return validateForm()">
+          <div class="mb-3">
+              <label for="kullanici_adi" class="form-label">Kullanıcı Adı (Öğrenci Numaranız):</label>
+              <input type="text" class="form-control" id="kullanici_adi" name="kullanici_adi" required>
+          </div>
+          <div class="mb-3">
+              <label for="sifre" class="form-label">Şifre (Öğrenci Numaranız):</label>
+              <input type="password" class="form-control" id="sifre" name="sifre" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Giriş Yap</button>
+      </form>
+    </div>
+
+    <script>
+      function validateForm() {
+          const kullaniciAdi = document.getElementById('kullanici_adi').value;
+          const regex = /^[a-zA-Z0-9._%+-]+@sakarya\.edu\.tr$/;
+          if (!regex.test(kullaniciAdi)) {
+              alert('Lütfen geçerli bir Sakarya Üniversitesi e-posta adresi girin.');
+              return false;
+          }
+          return true;
+      }
+  </script>
     
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
